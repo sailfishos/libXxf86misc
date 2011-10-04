@@ -1,0 +1,25 @@
+Name: libXxf86misc
+Summary: X.Org X11 libXxf86misc runtime library
+Description: Extension library for the XFree86-Misc X extension.
+Version: 1.0.3
+Release: 0
+Group: System/Libraries
+License: MIT/X11
+URL: http://www.x.org
+Sources:
+    - ftp://ftp.x.org/pub/individual/lib/%{name}-%{version}.tar.bz2
+
+PkgConfigBR:
+    - x11
+    - xext
+    - xproto
+    - xextproto
+    - xf86miscproto
+Configure: configure
+SubPackages:
+    - Name: devel
+      Summary: X.Org X11 libXxf86misc development package
+      Description: |
+          Extension development library for the XFree86-Misc X extension.
+      Group: System/Libraries
+
